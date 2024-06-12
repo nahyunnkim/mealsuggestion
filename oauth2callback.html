@@ -12,31 +12,12 @@
     const code = urlParams.get('code');
     const state = urlParams.get('state');
 
-    // Display the code (for testing purposes)
+    // Display the code
     document.write(`<p>Authorization code: ${code}</p>`);
     document.write(`<p>State: ${state}</p>`);
 
-    // Here, you might want to send the code to your server for further processing
-    // Example: send the code to your server using an AJAX request
-    /*
-    fetch('/your-server-endpoint', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({ code, state }),
-    })
-    .then(response => response.json())
-    .then(data => {
-      console.log('Success:', data);
-    })
-    .catch((error) => {
-      console.error('Error:', error);
-    });
-    */
-
-    // Optionally, redirect to another page or handle the code as needed
-    // window.location.href = '/another-page';
+   // Redirect to another page as needed
+    window.location.href = '/https://nahyunnkim.github.io/mealsuggestion/oauth2callback.html';
   </script>
 </body>
 </html>
